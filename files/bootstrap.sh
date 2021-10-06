@@ -17,7 +17,7 @@ cd /home/"$SYSTEM_USER"/ || exit
 
 # general system config and tools
 yum-config-manager --enable ol8_developer_EPEL
-dnf install git
+dnf install git -y
 
 # getting latest Terraform and Packer installers from iac.sh
 ## https://github.com/robertpeteuil/terraform-installer

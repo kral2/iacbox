@@ -26,6 +26,11 @@ variable "private_key_path" {
   default = null
 }
 
+variable "private_key" {
+  type    = string
+  default = null
+}
+
 variable "region" {
   type    = string
   default = null
@@ -105,8 +110,16 @@ variable "source_type" {
 ## operating system parameters
 
 variable "ssh_authorized_keys" {
-  description = "Public SSH keys path to be included in the ~/.ssh/authorized_keys file for the default user on the instance."
+  #! Deprecation notice: Please use `ssh_public_key` or `ssh_public_key_path` instead
+  description = "DEPRECATED: use ssh_public_key or ssh_public_key_path instead. Public SSH keys path to be included in the ~/.ssh/authorized_keys file for the default user on the instance."
   type        = string
+  default     = null
+}
+
+variable "ssh_public_key" {
+  description = "The content of the ssh public key used to access the compute instance. Set this, or ssh_public_key_path to add multiple keys at once."
+  type        = string
+  default     = null
 }
 
 variable "user_data" {
