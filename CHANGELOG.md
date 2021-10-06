@@ -10,6 +10,19 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
+## [0.2.0] - 2021-10-06
+
+### Changed
+
+- Compute module bumped to v2.2.0-RC1
+
+### Added
+
+Terraform Cloud compatibility: sensitive variables are passed as string in the TF Cloud workspace
+
+- add `var.private_key`
+- add `var.ssh_public_key`
+
 ## [0.1.1] - 2021-10-06
 
 Initial release.
