@@ -123,11 +123,6 @@ variable "assign_public_ip" {
   default     = true
 }
 
-variable "subnet_ocids" {
-  description = "The unique identifiers (OCIDs) of the subnets in which the instance primary VNICs are created."
-  type        = list(string)
-}
-
 ## storage parameters
 
 variable "block_storage_sizes_in_gbs" {

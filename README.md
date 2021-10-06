@@ -30,8 +30,8 @@ This module deploys an instance with the necessary tools to start developing Inf
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_instance_iacbox"></a> [instance\_iacbox](#module\_instance\_iacbox) | oracle-terraform-modules/compute-instance/oci | n/a |
-| <a name="module_vcn_iacbox"></a> [vcn\_iacbox](#module\_vcn\_iacbox) | oracle-terraform-modules/vcn/oci | n/a |
+| <a name="module_instance_iacbox"></a> [instance\_iacbox](#module\_instance\_iacbox) | oracle-terraform-modules/compute-instance/oci | 2.1.0 |
+| <a name="module_vcn_iacbox"></a> [vcn\_iacbox](#module\_vcn\_iacbox) | oracle-terraform-modules/vcn/oci | 3.0.0 |
 ## Resources
 
 | Name | Type |
@@ -58,7 +58,6 @@ This module deploys an instance with the necessary tools to start developing Inf
 | <a name="input_source_ocid"></a> [source\_ocid](#input\_source\_ocid) | The OCID of an image or a boot volume to use, depending on the value of source\_type. | `string` | n/a | yes |
 | <a name="input_source_type"></a> [source\_type](#input\_source\_type) | The source type for the instance. | `string` | `"image"` | no |
 | <a name="input_ssh_authorized_keys"></a> [ssh\_authorized\_keys](#input\_ssh\_authorized\_keys) | Public SSH keys path to be included in the ~/.ssh/authorized\_keys file for the default user on the instance. | `string` | n/a | yes |
-| <a name="input_subnet_ocids"></a> [subnet\_ocids](#input\_subnet\_ocids) | The unique identifiers (OCIDs) of the subnets in which the instance primary VNICs are created. | `list(string)` | n/a | yes |
 | <a name="input_tenancy_ocid"></a> [tenancy\_ocid](#input\_tenancy\_ocid) | n/a | `string` | `null` | no |
 | <a name="input_user_data"></a> [user\_data](#input\_user\_data) | Provide your own base64-encoded data to be used by Cloud-Init to run custom scripts or provide custom Cloud-Init configuration. | `string` | `null` | no |
 | <a name="input_user_ocid"></a> [user\_ocid](#input\_user\_ocid) | n/a | `string` | `null` | no |

@@ -9,7 +9,8 @@ locals {
 }
 
 module "vcn_iacbox" {
-  source = "oracle-terraform-modules/vcn/oci"
+  source  = "oracle-terraform-modules/vcn/oci"
+  version = "3.0.0"
 
   # general oci parameters
   compartment_id = var.compartment_id
@@ -39,7 +40,9 @@ resource "oci_core_subnet" "vcn_iacbox_public" {
 }
 
 module "instance_iacbox" {
-  source = "oracle-terraform-modules/compute-instance/oci"
+  source  = "oracle-terraform-modules/compute-instance/oci"
+  version = "2.1.0"
+
   # general oci parameters
   compartment_ocid = var.compartment_id
   # freeform_tags    = var.freeform_tags
