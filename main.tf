@@ -59,8 +59,8 @@ module "instance_iacbox" {
   ssh_public_keys = var.ssh_public_keys
   user_data       = filebase64(var.user_data)
   # networking parameters
-  assign_public_ip = var.assign_public_ip
-  subnet_ocids     = [oci_core_subnet.vcn_iacbox_public.id] # var.subnet_ocids
+  public_ip    = var.public_ip
+  subnet_ocids = [oci_core_subnet.vcn_iacbox_public.id] # var.subnet_ocids
   # storage parameters
   block_storage_sizes_in_gbs = [] # no block volume will be created
 }

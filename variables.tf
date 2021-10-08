@@ -109,13 +109,6 @@ variable "source_type" {
 
 ## operating system parameters
 
-variable "ssh_authorized_keys" {
-  #! Deprecation notice: Please use `ssh_public_key` or `ssh_public_key_path` instead
-  description = "DEPRECATED: use ssh_public_key or ssh_public_key_path instead. Public SSH keys path to be included in the ~/.ssh/authorized_keys file for the default user on the instance."
-  type        = string
-  default     = null
-}
-
 variable "ssh_public_keys" {
   description = "Public SSH keys to be included in the ~/.ssh/authorized_keys file for the default user on the instance. To provide multiple keys, see docs/instance_ssh_keys.adoc."
   type        = string
@@ -130,10 +123,10 @@ variable "user_data" {
 
 ## networking parameters
 
-variable "assign_public_ip" {
-  description = "Whether the VNIC should be assigned a public IP address."
-  type        = bool
-  default     = true
+variable "public_ip" {
+  description = "Whether to create a Public IP to attach to primary vnic and which lifetime. Valid values are NONE, RESERVED or EPHEMERAL."
+  type        = string
+  default     = "RESERVED"
 }
 
 ## storage parameters
