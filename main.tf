@@ -41,12 +41,11 @@ resource "oci_core_subnet" "vcn_iacbox_public" {
 
 module "instance_iacbox" {
   source  = "oracle-terraform-modules/compute-instance/oci"
-  version = "2.2.0-RC1"
+  version = "2.2.0"
 
   # general oci parameters
   compartment_ocid = var.compartment_id
-  # freeform_tags    = var.freeform_tags
-  # defined_tags     = var.defined_tags
+  freeform_tags    = var.freeform_tags
   # compute instance parameters
   ad_number                   = var.instance_ad_number
   instance_count              = var.instance_count
@@ -57,8 +56,8 @@ module "instance_iacbox" {
   instance_flex_memory_in_gbs = var.instance_flex_memory_in_gbs # only used if shape is Flex type
   instance_flex_ocpus         = var.instance_flex_ocpus         # only used if shape is Flex type
   # operating system parameters
-  ssh_public_key = var.ssh_public_key
-  user_data      = filebase64(var.user_data)
+  ssh_public_keys = var.ssh_public_keys
+  user_data       = filebase64(var.user_data)
   # networking parameters
   assign_public_ip = var.assign_public_ip
   subnet_ocids     = [oci_core_subnet.vcn_iacbox_public.id] # var.subnet_ocids

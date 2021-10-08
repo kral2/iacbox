@@ -10,6 +10,12 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
+## [0.2.1] - 2021-10-08
+
+### Changed
+
+- Compute module bumped to v2.2.0
+
 ## [0.2.0] - 2021-10-06
 
 ### Changed

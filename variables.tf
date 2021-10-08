@@ -116,8 +116,8 @@ variable "ssh_authorized_keys" {
   default     = null
 }
 
-variable "ssh_public_key" {
-  description = "The content of the ssh public key used to access the compute instance. Set this, or ssh_public_key_path to add multiple keys at once."
+variable "ssh_public_keys" {
+  description = "Public SSH keys to be included in the ~/.ssh/authorized_keys file for the default user on the instance. To provide multiple keys, see docs/instance_ssh_keys.adoc."
   type        = string
   default     = null
 }
