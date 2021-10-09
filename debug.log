@@ -1,8 +1,0 @@
-2021-10-09 02:09:35 (49.9 MB/s) - ‘go1.17.2.linux-arm64.tar.gz’ saved [102615093/102615093]
-
-go env: cannot find go env config: neither $XDG_CONFIG_HOME nor $HOME are defined
-missing $GOPATH
-Cloud-init v. 20.3-10.0.1.el8_4.5 running 'modules:final' at Sat, 09 Oct 2021 02:07:28 +0000. Up 28.54 seconds.
-2021-10-09 02:09:45,002 - cc_scripts_user.py[WARNING]: Failed to run module scripts-user (scripts in /var/lib/cloud/instance/scripts)
-2021-10-09 02:09:45,003 - util.py[WARNING]: Running module scripts-user (<module 'cloudinit.config.cc_scripts_user' from '/usr/lib/python3.6/site-packages/cloudinit/config/cc_scripts_user.py'>) failed
-Cloud-init v. 20.3-10.0.1.el8_4.5 finished at Sat, 09 Oct 2021 02:09:45 +0000. Datasource DataSourceOracle.  Up 166.46 seconds

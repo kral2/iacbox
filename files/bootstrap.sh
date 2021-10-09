@@ -20,8 +20,7 @@ yum-config-manager --enable ol8_developer_EPEL
 dnf install git -y
 
 # getting latest Terraform and Packer installers from iac.sh
-## https://github.com/robertpeteuil/terraform-installer
-## https://github.com/robertpeteuil/packer-installer
+## see https://github.com/robertpeteuil/terraform-installer and https://github.com/robertpeteuil/packer-installer
 curl iac.sh/terraform | bash && ./terraform-install.sh -a
 curl iac.sh/packer | bash && ./packer-install.sh -a
 
@@ -60,8 +59,10 @@ rm -rf "$GO_PACKAGE"
 {
     echo "#!/bin/sh"
     echo "sudo /usr/local/go/bin/go env -w GOBIN=/usr/local/bin"
-    echo "sudo /usr/local/go/bin/go install github.com/terraform-docs/terraform-docs@v0.16.0"
+    echo "sudo /usr/local/go/bin/go install github.com/terraform-docs/terraform-docs@latest"
 } >> $HOME_FOLDER/install_terraform_docs.sh
 
 chmod +x $HOME_FOLDER/install_terraform_docs.sh
 /bin/su -c "$HOME_FOLDER/install_terraform_docs.sh" - "$SYSTEM_USER"
+
+rm -rf "$HOME_FOLDER/install_terraform_docs.sh"
