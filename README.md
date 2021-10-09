@@ -39,6 +39,7 @@ This module deploys an instance with the necessary tools to start developing Inf
 | Name | Type |
 |------|------|
 | [oci_core_subnet.vcn_iacbox_public](https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/core_subnet) | resource |
+| [oci_core_images.images](https://registry.terraform.io/providers/hashicorp/oci/latest/docs/data-sources/core_images) | data source |
 ## Inputs
 
 | Name | Description | Type | Default | Required |

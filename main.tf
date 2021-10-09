@@ -51,7 +51,7 @@ module "instance_iacbox" {
   instance_count              = var.instance_count
   instance_display_name       = var.instance_display_name
   shape                       = var.shape
-  source_ocid                 = var.source_ocid
+  source_ocid                 = data.oci_core_images.images.images[0].id
   source_type                 = var.source_type
   instance_flex_memory_in_gbs = var.instance_flex_memory_in_gbs # only used if shape is Flex type
   instance_flex_ocpus         = var.instance_flex_ocpus         # only used if shape is Flex type
@@ -63,4 +63,17 @@ module "instance_iacbox" {
   subnet_ocids = [oci_core_subnet.vcn_iacbox_public.id] # var.subnet_ocids
   # storage parameters
   block_storage_sizes_in_gbs = [] # no block volume will be created
+}
+
+data "oci_core_images" "images" {
+  #Required
+  compartment_id = var.compartment_id
+
+  #Optional
+  # display_name = var.image_display_name
+  operating_system         = "Oracle Linux"
+  operating_system_version = "8"
+  shape                    = var.shape
+  sort_by                  = "TIMECREATED"
+  sort_order               = "DESC"
 }
