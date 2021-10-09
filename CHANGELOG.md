@@ -17,6 +17,11 @@ Given a version number MAJOR.MINOR.PATCH:
 Bootstrap.sh installs new tools:
 
 - project_o : a smart oci-cli wrapper
+- GitHub cli
+
+### Changed
+
+- Base image OCID is now dynamically retrieved, using the latest available version for the operating system family
 
 ## [0.4.0] - 2021-10-09
 

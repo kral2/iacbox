@@ -10,15 +10,25 @@
 
 ## About
 
-This module deploys an instance with the necessary tools to start developing Infrastructure as Code solutions on OCI:
+This module deploys an instance with the necessary tools to start developing Infrastructure as Code solutions on OCI.
 
-- Terraform
-- Packer
-- Ansible and specific roles
-- oci-cli, o_project
-- Python virtualenvwrapper, oci sdk
+General development tooling:
+
+- Git, pre-commit and the GitHub cli
+- Python virtualenvwrapper
 - Go
-- Git, pre-commit, terraform-docs
+
+IaC tooling:
+
+- Terraform, terraform-docs
+- Packer
+- Ansible and with useful community roles
+
+OCI related tooling and SDKs:
+
+- oci-cli and its smart wrapper `o`
+- OCI Python SDK
+- ansible-oci collection
 
 <!-- BEGIN_TF_DOCS -->
 

@@ -19,6 +19,10 @@ cd /home/"$SYSTEM_USER"/ || exit
 yum-config-manager --enable ol8_developer_EPEL
 dnf install git -y
 
+## install GitHub cli
+dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+dnf install gh -y
+
 # getting latest Terraform and Packer installers from iac.sh
 ## see https://github.com/robertpeteuil/terraform-installer and https://github.com/robertpeteuil/packer-installer
 curl iac.sh/terraform | bash && ./terraform-install.sh -a
