@@ -42,6 +42,11 @@ python -m pip install virtualenvwrapper --upgrade
 python -m pip install oci oci-cli --upgrade
 python -m pip install pre-commit --upgrade
 
+# install project_o (oci cli helpers)
+# https://github.com/oracle/oci-cli/tree/master/scripts/examples/project_o
+
+where=$(which oci) && wget -q https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/examples/project_o/o -O "${where%ci}" && chmod a+x "${where%ci}"
+
 # installing Ansible, collections and roles
 python -m pip install ansible # dnf install ansible ansible-doc -y
 ansible-galaxy collection install oracle.oci

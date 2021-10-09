@@ -10,6 +10,14 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
+## [0.5.0] - unreleased
+
+### Added
+
+Bootstrap.sh installs new tools:
+
+- project_o : a smart oci-cli wrapper
+
 ## [0.4.0] - 2021-10-09
 
 ### Added

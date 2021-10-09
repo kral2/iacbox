@@ -15,7 +15,7 @@ This module deploys an instance with the necessary tools to start developing Inf
 - Terraform
 - Packer
 - Ansible and specific roles
-- oci-cli
+- oci-cli, o_project
 - Python virtualenvwrapper, oci sdk
 - Go
 - Git, pre-commit, terraform-docs
