@@ -2,4 +2,4 @@
 
 ## Changes
 
-Reserved Public IP
+add a reserved Public IP to instance

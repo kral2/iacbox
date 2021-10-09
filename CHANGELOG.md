@@ -10,11 +10,25 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
+## [0.4.0] - 2021-10-09
+
+### Added
+
+Bootstrap.sh installs new programming language and tools:
+
+- Go 1.17.2
+- pre-commit 2.15.0 : A framework for managing and maintaining multi-language Git pre-commit hooks.
+- terraform-docs 0.16.0 : Generate Terraform modules documentation in various formats
+
+### Changed
+
+- pre-commit now use the official hook from the terraform-docs Github repo
+
 ## [0.3.0] - 2021-10-08
 
 ### Added
 
-- Reserved Public IP
+- add a reserved Public IP to instance
 
 ## [0.2.1] - 2021-10-08
 
@@ -45,4 +59,4 @@ Deploys a vcn with a public subnet, and a Linux 8 instance on ARM. The instance 
 - Packer
 - Ansible, oracle.oci collection and usefull roles
 - oci-cli
-- Python virtualenvwrapper, oci sdk
+- Python virtualenvwrapper, oci sdkx

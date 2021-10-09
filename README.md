@@ -1,23 +1,3 @@
-# IACBOX
-
-## Table of Contents
-
-1. [About](#about)
-2. [Requirements](#requirements)
-3. [Providers](#Providers)
-4. [Inputs](#inputs)
-5. [Outputs](#outputs)
-
-## About
-
-This module deploys an instance with the necessary tools to start developing Infrastructure as Code solutions on OCI:
-
-- Terraform
-- Packer
-- Ansible and specific roles
-- oci-cli
-- Python virtualenvwrapper, oci sdk
-
 <!-- BEGIN_TF_DOCS -->
 
 ## Requirements
