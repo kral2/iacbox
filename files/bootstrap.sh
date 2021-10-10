@@ -75,3 +75,8 @@ chmod +x $HOME_FOLDER/install_terraform_docs.sh
 /bin/su -c "$HOME_FOLDER/install_terraform_docs.sh" - "$SYSTEM_USER"
 
 rm -rf "$HOME_FOLDER/install_terraform_docs.sh"
+
+# install container tools
+
+sudo dnf module install container-tools:ol8 -y
+sudo dnf install podman-docker -y

@@ -17,6 +17,7 @@ General development tooling:
 - Git, pre-commit and the GitHub cli
 - Python virtualenvwrapper
 - Go
+- container tooling
 
 IaC tooling:
 

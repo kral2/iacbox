@@ -19,6 +19,7 @@ Bootstrap.sh installs new tools:
 - project_o : a smart oci-cli wrapper
 - GitHub cli
 - full HashiCorp stack: Packer, Terraform, Consul, Vault, Nomad
+- container tooling
 
 ### Changed
 
