@@ -20,8 +20,8 @@ General development tooling:
 
 IaC tooling:
 
-- Terraform, terraform-docs
-- Packer
+- HashiCorp Stack: Packer, Terraform, Consul, Vault, Nomad
+- terraform-docs
 - Ansible and with useful community roles
 
 OCI related tooling and SDKs:

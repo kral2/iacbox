@@ -2,4 +2,4 @@
 
 ## Changes
 
-add a reserved Public IP to instance
+add a reserved Public IP to iacbox instance
