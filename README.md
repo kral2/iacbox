@@ -31,6 +31,10 @@ OCI related tooling and SDKs:
 - OCI Python SDK
 - ansible-oci collection
 
+This is the deployed infrastructure:
+
+![diagram](https://github.com/kral2/iacbox/blob/main/files/images/deployed_infrastructure.png?raw=true&sanitize=true)
+
 <!-- BEGIN_TF_DOCS -->
 
 ## Requirements

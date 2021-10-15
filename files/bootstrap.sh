@@ -24,9 +24,9 @@ dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
 dnf install gh -y
 
 # getting latest HashiCorp tooling (Packer, Terraform, Consul, Vault, Nomad)
-curl -LO https://raw.github.com/kral2/hashistack-installer/main/hashistack-install.sh
+curl -LO https://raw.github.com/kral2/hashistack-installer/v0.3.1/hashistack-install.sh
 chmod +x hashistack-install.sh
-./hashistack-install.sh packer terraform consul vault nomad
+./hashistack-install.sh packer terraform consul vault nomad boundary waypoint
 
 # Python tooling
 ## update setuptools, wheel and pip

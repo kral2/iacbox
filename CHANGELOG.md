@@ -10,7 +10,7 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
-## [0.5.0] - unreleased
+## [0.5.0] - 2021-10-15
 
 ### Added
 
@@ -18,11 +18,12 @@ Bootstrap.sh installs new tools:
 
 - project_o : a smart oci-cli wrapper
 - GitHub cli
-- full HashiCorp stack: Packer, Terraform, Consul, Vault, Nomad
-- container tooling
+- full HashiCorp stack: Packer, Terraform, Consul, Vault, Nomad, Boundary, Waypoint
+- container tooling (podman)
 
 ### Changed
 
+- Hashistack-installer bumped to v0.3.1
 - Base image OCID is now dynamically retrieved, using the latest available version for the operating system family
 
 ## [0.4.0] - 2021-10-09
