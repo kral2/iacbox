@@ -99,6 +99,7 @@ variable "shape" {
 variable "source_ocid" {
   description = "The OCID of an image or a boot volume to use, depending on the value of source_type."
   type        = string
+  default     = null
 }
 
 variable "source_type" {
