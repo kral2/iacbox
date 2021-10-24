@@ -10,6 +10,8 @@
 
 ## About
 
+![diagram](https://github.com/kral2/iacbox/blob/main/files/images/iacbox_about.png?raw=true&sanitize=true)
+
 This module deploys an instance with the necessary tools to start developing Infrastructure as Code solutions on OCI.
 
 General development tooling:
@@ -35,6 +37,8 @@ This is the deployed infrastructure:
 
 ![diagram](https://github.com/kral2/iacbox/blob/main/files/images/deployed_infrastructure.png?raw=true&sanitize=true)
 
+The module also create an OCI Dynamic-Group and the associated OCI Policy to grant API `manage` authorization to the iacbox instance over the instance's compartment.
+
 <!-- BEGIN_TF_DOCS -->
 
 ## Requirements
@@ -54,6 +58,8 @@ This is the deployed infrastructure:
 | Name | Type |
 |------|------|
 | [oci_core_subnet.vcn_iacbox_public](https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/core_subnet) | resource |
+| [oci_identity_dynamic_group.iacbox](https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/identity_dynamic_group) | resource |
+| [oci_identity_policy.dynamic_group_iacbox](https://registry.terraform.io/providers/hashicorp/oci/latest/docs/resources/identity_policy) | resource |
 | [oci_core_images.images](https://registry.terraform.io/providers/hashicorp/oci/latest/docs/data-sources/core_images) | data source |
 ## Inputs
 

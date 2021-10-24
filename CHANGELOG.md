@@ -10,6 +10,17 @@ Given a version number MAJOR.MINOR.PATCH:
 - MINOR version when adding functionality in a backwards compatible manner,
 - PATCH version when making backwards compatible bug fixes.
 
+## [0.6.0] - 2021-10-24
+
+### Added
+
+- OCI API: Add instance_principal authentication (Fix #2)
+- Auto-configure `project_o` cli (Fix #4)
+
+## Fixes
+
+- Hashistack-installer bumped to v0.3.2 : fix waypoint installation on Linux arm architecture
+
 ## [0.5.0] - 2021-10-15
 
 ### Added
