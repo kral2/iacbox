@@ -40,8 +40,8 @@ resource "oci_core_subnet" "vcn_iacbox_public" {
 }
 
 module "instance_iacbox" {
-  source  = "oracle-terraform-modules/compute-instance/oci"
-  version = "2.2.0"
+  source  = "kral2/compute-instance/oci"
+  version = "2.3.0-RC1"
 
   # general oci parameters
   compartment_ocid = var.compartment_id
@@ -50,6 +50,7 @@ module "instance_iacbox" {
   ad_number                   = var.instance_ad_number
   instance_count              = var.instance_count
   instance_display_name       = var.instance_display_name
+  instance_state              = var.instance_state
   shape                       = var.shape
   source_ocid                 = data.oci_core_images.images.images[0].id
   source_type                 = var.source_type
