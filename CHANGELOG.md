@@ -15,7 +15,7 @@ Given a version number MAJOR.MINOR.PATCH:
 ### Added
 
 - OCI API: Add instance_principal authentication (Fix #2)
-- Auto-configure `project_o` cli (Fix #4)
+- Auto-configure `oci-cli` and `project_o` cli (Fix #4)
 
 ## Fixes
 

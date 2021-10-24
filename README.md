@@ -1,5 +1,12 @@
 # IACBOX
 
+## provision an instance for iac development on oci
+
+[![release](https://img.shields.io/github/v/release/kral2/iacbox?colorB=2067b8)](https://github.com/kral2/iacbox)
+[![bash](https://img.shields.io/badge/language-bash-89e051.svg?style=flat-square)](https://github.com/kral2/iacbox)
+[![hcl](https://img.shields.io/badge/language-hcl-89e051.svg?style=flat-square)](https://github.com/kral2/iacbox)
+[![license](https://img.shields.io/github/license/kral2/iacbox?colorB=2067b8)](https://github.com/kral2/iacbox)
+
 ## Table of Contents
 
 1. [About](#about)
