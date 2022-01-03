@@ -58,7 +58,7 @@ The module also create an OCI Dynamic-Group and the associated OCI Policy to gra
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_instance_iacbox"></a> [instance\_iacbox](#module\_instance\_iacbox) | kral2/compute-instance/oci | 2.3.0-RC1 |
+| <a name="module_instance_iacbox"></a> [instance\_iacbox](#module\_instance\_iacbox) | oracle-terraform-modules/compute-instance/oci | 2.3.0 |
 | <a name="module_vcn_iacbox"></a> [vcn\_iacbox](#module\_vcn\_iacbox) | oracle-terraform-modules/vcn/oci | 3.0.0 |
 ## Resources
 

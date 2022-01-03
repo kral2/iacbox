@@ -9,8 +9,8 @@ locals {
 }
 
 module "instance_iacbox" {
-  source  = "kral2/compute-instance/oci"
-  version = "2.3.0-RC1"
+  source  = "oracle-terraform-modules/compute-instance/oci"
+  version = "2.3.0"
 
   # general oci parameters
   compartment_ocid = var.compartment_id
